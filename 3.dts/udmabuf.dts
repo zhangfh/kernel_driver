@@ -1,0 +1,14 @@
+/dts-v1/;
+
+/ {
+	fragment@0 {
+		target-path = "/amba";
+		__overlay__ {
+			udmabuf4 {
+				compatible = "ikwzm,udmabuf-0.10.a";
+				minor-number = <4>;
+				size = <0x00400000>;
+			};
+		};
+	};
+};
